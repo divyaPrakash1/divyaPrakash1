@@ -3,13 +3,10 @@ import { RouterModule, Routes } from '@angular/router';
 
 const routes: Routes = [
   {
-    path: 'observable', 
-    loadChildren: () => import('./observable/observable.module').then((m) => m.ObservableModule)
+    path:'main', 
+    loadChildren: () => import('./main/main.module').then((m) => m.MainModule)
   },
-  {
-    path:'promise', 
-    loadChildren: () => import('./promise/promise.module').then((m) => m.PromiseModule)
-  }
+  
 ];
 
 @NgModule({
